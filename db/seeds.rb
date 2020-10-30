@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+(1..10).each do |n|
+  Note.create(title: 'No. ' + n.to_s, content: 'This is note No. ' + n.to_s)
+end
